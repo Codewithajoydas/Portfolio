@@ -1,0 +1,9 @@
+$fadeUp: fadeUp 0.6s linear forwards;
+@keyframes fadeUp {
+     from {
+          opacity: 0;
+     }
+     to {
+          opacity: 1;
+     }
+}

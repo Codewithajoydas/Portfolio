@@ -1,0 +1,113 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding-inline: 10px;
+  padding-block: 10px;
+  background: white;
+  backdrop-filter: blur(100px) !important;
+  z-index: 100;
+}
+header .download_resume {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.233);
+  text-decoration: none;
+}
+header .logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+header .logo img {
+  width: 40px;
+  height: 40px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: inherit;
+}
+header nav ul li a:hover, header nav ul li a.active {
+  border-radius: 50px;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.233);
+}
+header .hamburger {
+  display: flex;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+}
+header .hamburger:hover {
+  background: rgba(128, 128, 128, 0.185);
+  border-radius: 50%;
+}
+header .menus {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  backdrop-filter: blur(100px);
+  background: white;
+  box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.233);
+  border-radius: 0 0 50px 50px;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+header .menus ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px !important;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+header .menus ul li a {
+  cursor: pointer;
+  padding: 10px 60px;
+  min-width: 200px !important;
+  margin: 5px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: inherit;
+}
+header .menus ul li a:hover, header .menus ul li a.active {
+  border-radius: 50px;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.233);
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 786px) {
+  header .hamburger {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=Header.css.map */

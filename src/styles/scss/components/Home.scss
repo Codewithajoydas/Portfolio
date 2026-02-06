@@ -1,0 +1,167 @@
+@font-face {
+     font-family: charis_moderne;
+     src: url('../../../assets/fonts/Charis_Moderne.otf');
+}
+.hero_banner {
+     width: 100%;
+     height: calc(100vh - 60px);
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+     animation: fadeUp 0.6s forwards;
+     transition: all 0.2s ease-in-out;
+
+     div:nth-child(1) {
+          height: calc(100vh - 60px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 10px;
+          padding-inline: 10px;
+          .hero_text {
+               font-size: clamp(1.5rem, 5vw, 10rem);
+               font-family: charis_moderne;
+               font-weight: bolder;
+               color: #42475b;
+               .char {
+                    opacity: 0.5;
+                    color: #dc9372;
+                    transform: translateY(20px);
+                    animation: fadeUp 0.6s linear infinite;
+               }
+               @keyframes fadeUp {
+                    to {
+                         color: #42475b;
+                         opacity: 1;
+                         transform: translateY(0);
+                    }
+               }
+               @for $i from 1 through 21 {
+                    .char:nth-child(#{$i}) {
+                         animation-delay: $i * 0.02s;
+                    }
+               }
+          }
+          p {
+               font-family: charis_moderne;
+               font-weight: bold;
+               font-size: larger;
+          }
+          .btns {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               gap: 30px;
+               margin-top: 30px;
+               button {
+                    border: none;
+                    outline: none;
+                    max-width: 200px;
+                    border-radius: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px 15px;
+                    background: #42475b;
+                    box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.356);
+                    cursor: pointer;
+                    gap: 10px;
+                    border: 1px solid transparent;
+                    transition: all 0.2s ease-in-out;
+                    &:hover {
+                         background: white;
+                         color: black;
+                         border: 1px solid #42475b;
+                         transform: translateY(-10%) scale(1.1);
+                         svg {
+                              stroke: #42475b;
+                         }
+                         a {
+                              color: #42475b;
+                         }
+                    }
+                    a {
+                         color: #fff;
+                         text-decoration: none;
+                    }
+                    svg {
+                         stroke: #fff;
+                    }
+               }
+          }
+     }
+     div:nth-child(2) {
+          width: 50%;
+          img {
+               height: calc(100vh - 58px);
+               width: 100%;
+               object-fit: cover;
+               transition: all 0.2s ease-in-out;
+               border-radius: 500px 100px 0 0;
+               &:hover {
+                    animation: hanging 1s linear infinite alternate;
+               }
+          }
+     }
+     @keyframes hanging {
+          from {
+               border-radius: 500px 100px 0 0;
+          }
+          to {
+               border-radius: 100px 200px 0 0;
+          }
+     }
+}
+
+body {
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background: url('/Grunge_texture_set_2.jpg');
+     animation: rotateImage 10s linear infinite;
+}
+@keyframes rotateImage {
+     from {
+          background-position: 10% 0;
+     }
+     to {
+          background-position: 0 0;
+     }
+}
+
+::-webkit-scrollbar {
+     display: none;
+}
+
+@keyframes fadeUp {
+     from {
+          opacity: 0;
+     }
+     to {
+          opacity: 1;
+     }
+}
+
+@media screen and (max-width: 768px) {
+     .hero_banner {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+          justify-content: start;
+          height: auto;
+          padding-block: 10px;
+          div:nth-child(2) {
+               width: 100%;
+               img {
+                    border-radius: 0;
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 100px 100px 0 0;
+               }
+          }
+          div:nth-child(1){
+               height: auto;
+          }
+     }
+}

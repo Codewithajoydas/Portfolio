@@ -1,0 +1,142 @@
+.contact {
+     display: flex;
+     justify-content: center;
+     height: calc(100vh - 70px);
+     align-items: center;
+}
+
+.contact__container {
+     background: #ffffff;
+     width: 100%;
+     max-width: 1000px;
+     padding: 50px;
+     display: flex;
+     gap: 60px;
+     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* LEFT SIDE */
+.contact__info {
+     flex: 1;
+
+     h2 {
+          font-size: 32px;
+          margin-bottom: 30px;
+     }
+
+     .contact__detail {
+          margin-bottom: 20px;
+
+          span {
+               font-weight: 600;
+               display: block;
+               margin-bottom: 5px;
+          }
+
+          p {
+               color: #555;
+               line-height: 1.6;
+          }
+     }
+
+     .contact__social {
+          margin-top: 30px;
+
+          span {
+               font-weight: 600;
+               display: block;
+               margin-bottom: 10px;
+          }
+
+          .icons {
+               display: flex;
+               gap: 12px;
+
+               .icon {
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    
+                    img {
+                         width: 90%;
+                    }
+               }
+          }
+     }
+}
+
+/* RIGHT SIDE */
+.contact__form {
+     flex: 1;
+
+     .row {
+          display: flex;
+          gap: 15px;
+          margin-bottom: 15px;
+
+          input {
+               flex: 1;
+               padding: 12px 14px;
+               border-radius: 8px;
+               border: none;
+               background: #f3f3f3;
+               font-size: 14px;
+          }
+     }
+
+     textarea {
+          width: 100%;
+          height: 120px;
+          padding: 14px;
+          border-radius: 8px;
+          border: none;
+          background: #f3f3f3;
+          resize: none;
+          margin-bottom: 20px;
+          font-size: 14px;
+     }
+
+     button {
+          width: 100%;
+          padding: 14px;
+          background: #111;
+          color: #fff;
+          border: none;
+          border-radius: 8px;
+          font-size: 15px;
+          cursor: pointer;
+
+          &:hover {
+               background: #000;
+          }
+     }
+}
+
+
+@media (max-width: 768px) {
+  .contact {
+    align-items: flex-start;
+    padding: 20px;
+    .row{
+     display: flex;
+     flex-direction: column;
+    }
+  }
+
+  .contact__container {
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+    box-shadow: none;
+  }
+
+  .contact__info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .contact__social .icons {
+    gap: 16px;
+  }
+}

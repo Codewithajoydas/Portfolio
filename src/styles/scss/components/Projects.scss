@@ -1,0 +1,127 @@
+@import '../variables';
+.projects {
+     animation: $fadeUp;
+     padding: 10px;
+     h1 {
+          font-size: clamp(1.5rem, 5vw, 10rem);
+          font-family: charis_moderne;
+          color: #42475b;
+     }
+     p{
+          font-size: large;
+          font-family: charis_moderne;
+          font-weight: bolder;
+     }
+     .p-items {
+          .p-item {
+               display: flex;
+               justify-content: space-around;
+               align-items: center;
+               .item-banner {
+                    perspective: 1000px;
+                    img {
+                         // transform: rotateY(20deg);
+                         filter: drop-shadow(
+                              -10px -10px 10px rgba(128, 128, 128, 0.445)
+                         );
+                         transition: all 0.2s ease-in-out;
+                         pointer-events: all;
+                         &:hover {
+                              transform: rotateY(0deg);
+                         }
+                    }
+               }
+               .item-body {
+                    h2 {
+                         font-family: charis_moderne;
+                         font-size: clamp(1.5rem, 3vw, 10rem);
+                    }
+                    h3 {
+                         color: gray;
+                    }
+                    p {
+                         font-family: charis_moderne;
+                         font-size: larger;
+                         font-weight: bolder;
+                         line-height: 1.5;
+                    }
+                    button {
+                         padding: 15px 50px;
+                         border: none;
+                         background: #42475b;
+                         color: white;
+                         border-radius: 50px;
+                         cursor: pointer;
+                         transition: all 0.2s ease-in-out;
+                         &:hover {
+                              transform: scale(1.1);
+                         }
+                    }
+               }
+          }
+          .asas {
+               // transform: rotateY(-20deg) !important;
+               //   filter: drop-shadow(-10px -10px 10px rgba(128, 128, 128, 0.445));
+               transition: all 0.2s ease-in-out;
+               pointer-events: all;
+               &:hover {
+                    transform: rotateY(0deg) !important;
+               }
+          }
+          .sdsd {
+               // transform: rotateY(20deg) !important;
+               //   filter: drop-shadow(-10px -10px 10px rgba(128, 128, 128, 0.445));
+               transition: all 0.2s ease-in-out;
+               pointer-events: all;
+               &:hover {
+                    transform: rotateY(0deg) !important;
+               }
+          }
+     }
+}
+
+.moretocome {
+     animation: bounceScale 1.2s ease-in-out infinite;
+}
+
+@keyframes bounceScale {
+     0% {
+          transform: scale(1);
+     }
+
+     20% {
+          transform: scale(1.15);
+     }
+
+     40% {
+          transform: scale(0.95);
+     }
+
+     60% {
+          transform: scale(1.08);
+     }
+
+     80% {
+          transform: scale(0.98);
+     }
+
+     100% {
+          transform: scale(1);
+     }
+}
+
+@media screen and (max-width:768px) {
+     .p-item{
+          flex-direction: column;
+          .item-banner{
+               text-align: center;
+               img{
+                    width: 100%;
+                    object-fit: fill;
+               }
+          }
+          &:nth-child(2){
+               flex-direction: column-reverse;
+          }
+     }
+}

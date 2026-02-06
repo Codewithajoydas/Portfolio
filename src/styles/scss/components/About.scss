@@ -1,0 +1,100 @@
+.about {
+     padding: 10px;
+     animation: fadeUp 0.6s forwards;
+     h1 {
+          font-size: clamp(1.5rem, 5vw, 10rem);
+          color: #42475b;
+          font-family: charis_moderne;
+     }
+     p {
+          font-size: clamp(1.2rem, 3vw, 2rem);
+          font-family: charis_moderne;
+          font-weight: bold;
+          line-height: 1.5;
+     }
+     .btns {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          padding: 10px;
+          margin-block: 10px;
+          button {
+               border: none;
+               outline: none;
+               max-width: 200px;
+               border-radius: 50px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               padding: 10px 15px;
+               border: 1px solid #42475b;
+               color: #42475b;
+               box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.11);
+               cursor: pointer;
+               gap: 10px;
+               border: 1px solid transparent;
+               transition: all 0.2s ease-in-out;
+
+               &:hover {
+                    background: white;
+                    color: black;
+                    border: 1px solid #42475b;
+                    transform: translateY(-10%) scale(1.1);
+                    a {
+                         color: #42475b;
+                    }
+               }
+               a {
+                    color: #42475b;
+                    text-decoration: none;
+                    svg {
+                         stroke: #42475b;
+                    }
+               }
+          }
+     }
+     .philosophy {
+          border-left: 5px solid #42475b;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          color: gray;
+     }
+}
+
+.projects {
+     a {
+          svg {
+               stroke: #fff !important;
+          }
+     }
+}
+@keyframes fadeUp {
+     from {
+          opacity: 0;
+     }
+     to {
+          opacity: 1;
+     }
+}
+
+.projectBtn {
+     svg {
+          stroke: #fff !important;
+     }
+}
+
+@media screen and (max-width: 768px) {
+     .about__img {
+          width: 50% !important;
+          border-radius: 0 !important;
+          float: none !important;
+     }
+     .about__container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+     }
+}

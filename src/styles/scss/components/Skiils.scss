@@ -1,0 +1,204 @@
+@import '../_variables';
+
+.skiles {
+     padding: 10px;
+     animation: $fadeUp;
+     h1 {
+          font-size: clamp(1.5rem, 5vw, 10rem);
+          color: #42475b;
+          font-family: charis_moderne;
+     }
+     p {
+          font-family: charis_moderne;
+          font-size: large;
+          font-weight: bolder;
+     }
+     .items {
+          display: flex;
+          flex-wrap: nowrap;
+          overflow-x: scroll;
+          align-items: center;
+          gap: 30px;
+          margin-top: 20px;
+          scroll-snap-type: x mandatory;
+          .item {
+               height: 400px;
+               min-width: 400px;
+               background: white;
+               scroll-behavior: smooth;
+               scroll-snap-align: center;
+               padding: 10px;
+               border-radius: 500px;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               gap: 10px;
+               transition: all 0.2s ease-in-out;
+               img {
+                    width: 200px;
+                    height: 200px;
+               }
+               .name {
+                    font-size: clamp(1rem, 3vw, 2rem);
+                    color: #42475b;
+                    font-weight: bold;
+               }
+               .bar {
+                    width: 100%;
+                    // background: #42475b;
+                    border: 0.2px solid #42475b;
+                    box-shadow: 0 0 10px rgba(128, 128, 128, 0.116);
+                    border-radius: 100px;
+                    .progress {
+                         border-radius: 100px;
+                         animation: increase 10s linear forwards;
+                    }
+               }
+          }
+     }
+}
+
+@keyframes increase {
+     from {
+          width: 0;
+     }
+}
+
+.projectsBtn {
+     padding: 10px 20px;
+     background: #42475b;
+     color: white;
+     border: none;
+     outline: none;
+     border-radius: 50px;
+     a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          text-decoration: none;
+          color: white;
+     }
+     transition: all 0.2s ease-in-out;
+     &:hover {
+          transform: scale(1.1);
+     }
+}
+
+.circle {
+     background: white;
+     width: 415px;
+     height: 415px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 100px;
+     // overflow: hidden;
+     .bg-color {
+          width: 415px;
+          border-radius: 900px;
+          height: 415px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+}
+.leftbutton {
+     left: 10px;
+     position: fixed;
+     background: #42475b;
+     z-index: 1000;
+     width: 50px;
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 100px;
+     cursor: pointer;
+     transition: all 0.2s ease-in-out;
+     &:hover {
+          transform: scale(1.1);
+     }
+}
+.rightbutton {
+     width: 50px;
+     height: 50px;
+     right: 10px;
+     background: #42475b;
+     position: fixed;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 100px;
+     cursor: pointer;
+     z-index: 1000;
+     transition: all 0.2s ease-in-out;
+     &:hover {
+          transform: scale(1.1);
+     }
+}
+
+@media (max-width: 768px) {
+     .skiles {
+          padding: 8px;
+
+          p {
+               font-size: 1rem;
+               font-weight: 600;
+          }
+     }
+
+     .skiles .items {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+     }
+
+     .skiles .items .item {
+          min-width: 260px;
+          height: 260px;
+          border-radius: 200px;
+          padding: 12px;
+
+          img {
+               width: 120px;
+               height: 120px;
+          }
+
+          .name {
+               font-size: 1.2rem;
+          }
+     }
+
+     .circle,
+     .circle .bg-color {
+          width: 280px;
+          height: 280px;
+     }
+
+     .leftbutton,
+     .rightbutton {
+          width: 44px;
+          height: 44px;
+          bottom: 20px;
+          position: fixed;
+          display: none;
+     }
+
+     .leftbutton {
+          left: 12px;
+     }
+
+     .rightbutton {
+          right: 12px;
+     }
+     .skillsContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          justify-content: start;
+          align-items: start;
+     }
+}
