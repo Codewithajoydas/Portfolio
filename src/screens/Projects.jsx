@@ -1,5 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import '../styles/css/components/Projects.css';
+import kodhra from '/src/assets/images/Kodhra.png';
+import cssProjects from '/src/assets/images/css.png';
+import liveCodeCraft from '/src/assets/images/livecodecraft.png';
 const Projects = () => {
      return (
           <>
@@ -70,8 +73,8 @@ const Projects = () => {
                          <div className="p-item">
                               <div className="item-banner">
                                    <img
-                                        src="src\assets\images\Kodhra.png"
-                                        alt=""
+                                        src={kodhra}
+                                        alt="This is kodhra"
                                         width={'700px'}
                                    />
                               </div>
@@ -94,7 +97,15 @@ const Projects = () => {
                                         a centralized knowledge base for your
                                         personal and professional code.
                                    </p>
-                                   <button onClick={()=>window.location.assign("https://kodhra.codewithajoydas.live", "_blank")}>Visit Site</button>
+                                   <button
+                                        onClick={() =>
+                                             window.location.assign(
+                                                  'https://kodhra.codewithajoydas.live',
+                                                  '_blank',
+                                             )
+                                        }>
+                                        Visit Site
+                                   </button>
                               </div>
                          </div>
                          <div className="p-item">
@@ -121,12 +132,20 @@ const Projects = () => {
                                         mastery through hands-on
                                         experimentation.
                                    </p>
-                                   <button onClick={()=>window.location.assign("https://cssprojects.codewithajoydas.live", "_blank")}>Visit Site</button>
+                                   <button
+                                        onClick={() =>
+                                             window.location.assign(
+                                                  'https://cssprojects.codewithajoydas.live',
+                                                  '_blank',
+                                             )
+                                        }>
+                                        Visit Site
+                                   </button>
                               </div>
 
                               <div className="item-banner">
                                    <img
-                                        src="src\assets\images\css.png"
+                                        src={cssProjects}
                                         alt=""
                                         width={'600px'}
                                         className="asas"
@@ -136,7 +155,7 @@ const Projects = () => {
                          <div className="p-item">
                               <div className="item-banner">
                                    <img
-                                        src="src\assets\images\livecodecraft.png"
+                                        src={liveCodeCraft}
                                         alt=""
                                         width={'750px'}
                                         className="sdsd"
@@ -163,7 +182,15 @@ const Projects = () => {
                                         learning and better problem-solving
                                         through continuous practice.
                                    </p>
-                                   <button onClick={()=>window.location.assign("https://codewithajoydas.github.io/LiveCodeCraft", "_blank")}>Visit Site</button>
+                                   <button
+                                        onClick={() =>
+                                             window.location.assign(
+                                                  'https://codewithajoydas.github.io/LiveCodeCraft',
+                                                  '_blank',
+                                             )
+                                        }>
+                                        Visit Site
+                                   </button>
                               </div>
                          </div>
                     </div>

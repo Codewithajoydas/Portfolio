@@ -1,5 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import '../styles/css/components/Education.css';
+import image1 from '/src/assets/images/photo-1588072432836-e10032774350.jpg';
+import image2 from '/src/assets/images/photo-1524995997946-a1c2e315a42f.jpg';
+import image3 from '/src/assets/images/photo-1519389950473-47ba0277781c.jpg';
 const Education = () => {
      return (
           <>
@@ -74,10 +77,7 @@ const Education = () => {
                          {/* College */}
                          <div className="education-card">
                               <div className="education-image">
-                                   <img
-                                        src="src\assets\images\photo-1588072432836-e10032774350.jpg"
-                                        alt="College"
-                                   />
+                                   <img src={image1} alt="College" />
                               </div>
                               <div className="education-content">
                                    <h2>Bachelor’s Degree</h2>
@@ -98,10 +98,7 @@ const Education = () => {
                          {/* School */}
                          <div className="education-card">
                               <div className="education-image">
-                                   <img
-                                        src="src\assets\images\photo-1524995997946-a1c2e315a42f.jpg"
-                                        alt="School"
-                                   />
+                                   <img src={image2} alt="School" />
                               </div>
                               <div className="education-content">
                                    <h2>Higher Secondary Education</h2>
@@ -122,7 +119,7 @@ const Education = () => {
                          <div className="education-card">
                               <div className="education-image">
                                    <img
-                                        src="src\assets\images\photo-1519389950473-47ba0277781c.jpg"
+                                        src={image3}
                                         alt="Self Learning"
                                    />
                               </div>

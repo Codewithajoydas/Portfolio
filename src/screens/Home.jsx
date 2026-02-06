@@ -1,9 +1,10 @@
 import { Helmet } from 'react-helmet-async';
 import '../styles/css/components/Home.css';
 import { Link, useNavigate } from 'react-router';
+import AjoydasImage from '/src/assets/images/codewithajoydas.png';
 const Home = () => {
      const text = 'Scalable Applications';
-  
+
      return (
           <>
                <Helmet>
@@ -133,10 +134,7 @@ const Home = () => {
                          </div>
                     </div>
                     <div>
-                         <img
-                              src="src\assets\images\codewithajoydas.png"
-                              alt=""
-                         />
+                         <img src={AjoydasImage} alt="" />
                     </div>
                </div>
           </>
