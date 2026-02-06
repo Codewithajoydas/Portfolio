@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/css/components/Contact.css';
 import { Helmet } from 'react-helmet-async';
-
+import facebok from '/src/assets/images/facebook.svg';
+import github from '/src/assets/images/github.svg';
+import instagram from '/src/assets/images/instagram.svg';
+import youtube from '/src/assets/images/youtube.svg';
 export default function Contact() {
      const [name, setName] = useState('');
      const [email, setEmail] = useState('');
@@ -19,17 +22,20 @@ export default function Contact() {
           try {
                setLoading(true);
 
-               const res = await fetch('https://p-back-jo4r.onrender.com/contact', {
-                    method: 'POST',
-                    headers: {
-                         'Content-Type': 'application/json',
+               const res = await fetch(
+                    'https://p-back-jo4r.onrender.com/contact',
+                    {
+                         method: 'POST',
+                         headers: {
+                              'Content-Type': 'application/json',
+                         },
+                         body: JSON.stringify({
+                              name,
+                              email,
+                              message,
+                         }),
                     },
-                    body: JSON.stringify({
-                         name,
-                         email,
-                         message,
-                    }),
-               });
+               );
 
                const data = await res.json();
                console.log(data);
@@ -92,27 +98,21 @@ export default function Contact() {
                                    <div className="icons">
                                         <i className="icon">
                                              <img
-                                                  src="/src/assets/images/facebook.svg"
+                                                  src={facebok}
                                                   alt="Facebook"
                                              />
                                         </i>
                                         <i className="icon">
-                                             <img
-                                                  src="/src/assets/images/github.svg"
-                                                  alt="GitHub"
-                                             />
+                                             <img src={github} alt="GitHub" />
                                         </i>
                                         <i className="icon">
                                              <img
-                                                  src="/src/assets/images/instagram.svg"
+                                                  src={instagram}
                                                   alt="Instagram"
                                              />
                                         </i>
                                         <i className="icon">
-                                             <img
-                                                  src="/src/assets/images/youtube.svg"
-                                                  alt="YouTube"
-                                             />
+                                             <img src={youtube} alt="YouTube" />
                                         </i>
                                    </div>
                               </div>
