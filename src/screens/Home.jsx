@@ -8,7 +8,10 @@ const Home = () => {
      return (
           <>
                <Helmet>
-                    <title>Home | Codewithajoydas</title>
+                    <title>
+                         Codewithajoydas | Software Engineer & JavaScript
+                         Specialist
+                    </title>
 
                     {/* Basic SEO */}
                     <meta
