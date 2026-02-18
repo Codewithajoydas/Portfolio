@@ -54,12 +54,12 @@
   border: none;
   background: #42475b;
   color: white;
-  border-radius: 50px;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 .projects .p-items .p-item .item-body button:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .projects .p-items .asas {
   transition: all 0.2s ease-in-out;

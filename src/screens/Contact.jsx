@@ -96,22 +96,46 @@ export default function Contact() {
                               <div className="contact__social">
                                    <span>Follow us</span>
                                    <div className="icons">
-                                        <i className="icon">
+                                        <i
+                                             className="icon"
+                                             onClick={() => {
+                                                  window.location.assign(
+                                                       'https://www.facebook.com/profile.php?id=61568120309291&sk=grid',
+                                                  );
+                                             }}>
                                              <img
                                                   src={facebok}
                                                   alt="Facebook"
                                              />
                                         </i>
-                                        <i className="icon">
+                                        <i
+                                             className="icon"
+                                             onClick={() => {
+                                                  window.location.assign(
+                                                       'https://github.com/Codewithajoydas',
+                                                  );
+                                             }}>
                                              <img src={github} alt="GitHub" />
                                         </i>
-                                        <i className="icon">
+                                        <i
+                                             className="icon"
+                                             onClick={() => {
+                                                  window.location.assign(
+                                                       'https://www.instagram.com/codewithajoydas/',
+                                                  );
+                                             }}>
                                              <img
                                                   src={instagram}
                                                   alt="Instagram"
                                              />
                                         </i>
-                                        <i className="icon">
+                                        <i
+                                             className="icon"
+                                             onClick={() => {
+                                                  window.location.assign(
+                                                       'https://www.youtube.com/@codewithajoydas',
+                                                  );
+                                             }}>
                                              <img src={youtube} alt="YouTube" />
                                         </i>
                                    </div>

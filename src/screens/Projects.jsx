@@ -81,6 +81,11 @@ const Projects = () => {
                               <div className="item-body">
                                    <h3>Web Application</h3>
                                    <h2>KODHRA</h2>
+                                   <p style={{ color: 'gray' }}>
+                                        {' '}
+                                        React, Node.js, Express, MongoDB, JWT,
+                                        REST API{' '}
+                                   </p>
                                    <p>
                                         Kodhra is a modern code snippet manager
                                         designed to help developers organize,
@@ -97,21 +102,49 @@ const Projects = () => {
                                         a centralized knowledge base for your
                                         personal and professional code.
                                    </p>
-                                   <button
-                                        onClick={() =>
-                                             window.location.assign(
-                                                  'https://kodhra.codewithajoydas.live',
-                                                  '_blank',
-                                             )
-                                        }>
-                                        Visit Site
-                                   </button>
+                                   <div
+                                        style={{
+                                             display: 'flex',
+                                             justifyContent: 'start',
+                                             alignItems: 'center',
+                                             gap: '20px',
+                                        }}>
+                                        <button
+                                             onClick={() =>
+                                                  window.location.assign(
+                                                       'https://kodhra.codewithajoydas.live',
+                                                       '_blank',
+                                                  )
+                                             }>
+                                             Visit Site
+                                        </button>
+                                        <button
+                                             style={{
+                                                  background: 'none',
+                                                  color: 'black',
+                                                  border: '1px solid black',
+                                             }}
+                                             onClick={() =>
+                                                  window.location.assign(
+                                                       'https://github.com/Codewithajoydas/Kodhra',
+                                                       '_blank',
+                                                  )
+                                             }>
+                                             View Code
+                                        </button>
+                                   </div>
                               </div>
                          </div>
                          <div className="p-item">
                               <div className="item-body">
                                    <h3>Web Application</h3>
                                    <h2>CSS Projects Collection</h2>
+                                   <p style={{ color: 'gray' }}>
+                                        {' '}
+                                        HTML5, CSS3, Flexbox, Grid,
+                                        Animations{' '}
+                                   </p>
+
                                    <p>
                                         This project is a vast collection of
                                         carefully crafted CSS projects focused
@@ -132,15 +165,35 @@ const Projects = () => {
                                         mastery through hands-on
                                         experimentation.
                                    </p>
-                                   <button
-                                        onClick={() =>
-                                             window.location.assign(
-                                                  'https://cssprojects.codewithajoydas.live',
-                                                  '_blank',
-                                             )
-                                        }>
-                                        Visit Site
-                                   </button>
+                                   <div
+                                        style={{
+                                             display: 'flex',
+                                             gap: '20px',
+                                        }}>
+                                        <button
+                                             onClick={() =>
+                                                  window.location.assign(
+                                                       'https://cssprojects.codewithajoydas.live',
+                                                       '_blank',
+                                                  )
+                                             }>
+                                             Visit Site
+                                        </button>
+                                        <button
+                                             style={{
+                                                  background: 'none',
+                                                  color: 'black',
+                                                  border: '1px solid black',
+                                             }}
+                                             onClick={() =>
+                                                  window.location.assign(
+                                                       'https://github.com/Codewithajoydas/CSS-PROJECTS',
+                                                       '_blank',
+                                                  )
+                                             }>
+                                             View Code
+                                        </button>
+                                   </div>
                               </div>
 
                               <div className="item-banner">
@@ -157,13 +210,19 @@ const Projects = () => {
                                    <img
                                         src={liveCodeCraft}
                                         alt=""
-                                        width={'750px'}
+                                        width={'600px'}
                                         className="sdsd"
                                    />
                               </div>
                               <div className="item-body">
                                    <h3>Web Application</h3>
                                    <h2>LiveCodeCraft</h2>
+                                   <p style={{ color: 'gray' }}>
+                                        {' '}
+                                        Vanilla JavaScript, DOM APIs, Code
+                                        Execution Logic{' '}
+                                   </p>
+
                                    <p>
                                         LiveCodeCraft is an interactive web
                                         application focused on practicing and
@@ -182,15 +241,35 @@ const Projects = () => {
                                         learning and better problem-solving
                                         through continuous practice.
                                    </p>
-                                   <button
-                                        onClick={() =>
-                                             window.location.assign(
-                                                  'https://codewithajoydas.github.io/LiveCodeCraft',
-                                                  '_blank',
-                                             )
-                                        }>
-                                        Visit Site
-                                   </button>
+                                   <div
+                                        style={{
+                                             display: 'flex',
+                                             gap: '20px',
+                                        }}>
+                                        <button
+                                             onClick={() =>
+                                                  window.location.assign(
+                                                       'https://codewithajoydas.github.io/LiveCodeCraft/',
+                                                       '_blank',
+                                                  )
+                                             }>
+                                             Visit Site
+                                        </button>
+                                        <button
+                                             style={{
+                                                  background: 'none',
+                                                  color: 'black',
+                                                  border: '1px solid black',
+                                             }}
+                                             onClick={() =>
+                                                  window.location.assign(
+                                                       'https://github.com/Codewithajoydas/LiveCodeCraft',
+                                                       '_blank',
+                                                  )
+                                             }>
+                                             View Code
+                                        </button>
+                                   </div>
                               </div>
                          </div>
                     </div>

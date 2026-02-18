@@ -65,13 +65,99 @@ const Skills = () => {
           JSON: '000000',
           Markdown: '000000',
      };
+     const tools = [
+          {
+               title: 'VS Code',
+               level: 95,
+               icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
+               description:
+                    'My primary code editor for writing and debugging HTML, CSS, and JavaScript. I use extensions like Prettier and Live Server to maintain clean formatting and fast development.',
+          },
+          {
+               title: 'Git',
+               level: 95,
+               icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+               description:
+                    'Used for version control to track changes, manage branches, and maintain structured project history.',
+          },
+          {
+               title: 'GitHub',
+               level: 95,
+               icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+               description:
+                    'Host repositories, collaborate on projects, and manage code safely in the cloud.',
+          },
+          {
+               title: 'Chrome DevTools',
+               level: 90,
+               icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg',
+               description:
+                    'Debug layouts, inspect elements, test responsiveness, and analyze performance issues.',
+          },
+          {
+               title: 'npm',
+               level: 85,
+               icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg',
+               description:
+                    'Manage project dependencies and run development scripts for modern JavaScript workflows.',
+          },
+          {
+               title: 'Linux',
+               level: 85,
+               icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+               description:
+                    'Comfortable working in a Linux environment for development, terminal usage, and server-related tasks.',
+          },
+          {
+               title: 'Windows',
+               level: 90,
+               icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg',
+               description:
+                    'Daily development environment with strong understanding of system tools and configuration.',
+          },
+          {
+               title: 'Docker',
+               level: 80,
+               icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+               description:
+                    'Create consistent development environments and containerize applications for reliable deployment.',
+          },
+          {
+               title: 'Figma',
+               level: 85,
+               icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
+               description:
+                    'Translate UI designs into responsive code and understand layout, spacing, and visual hierarchy.',
+          },
+          {
+               title: 'Terminal',
+               level: 85,
+               icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg',
+               description:
+                    'Use command-line tools for Git, npm, Docker, and system operations to streamline development.',
+          },
+          {
+               title: 'Netlify',
+               level: 80,
+               icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg',
+               description:
+                    'Deploy and host front-end projects quickly with continuous deployment from Git repositories.',
+          },
+          {
+               title: 'Vercel',
+               level: 80,
+               icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg',
+               description:
+                    'Deploy modern web applications with optimized builds and automatic updates.',
+          },
+     ];
 
      const buttonRef = useRef(null);
      const cardWidth = 400;
      const leftScroll = () => {
           console.log(buttonRef.current.scrollLeft);
           console.log(buttonRef.current.scrollWidth);
-          if(buttonRef.current.scrollWidth >= buttonRef.current.scrollLeft ){
+          if (buttonRef.current.scrollWidth >= buttonRef.current.scrollLeft) {
                buttonRef.current.scrollBy({ left: 0, behavior: 'smooth' });
           }
           buttonRef.current.scrollBy({ left: cardWidth, behavior: 'smooth' });
@@ -80,24 +166,24 @@ const Skills = () => {
           buttonRef.current.scrollBy({ left: -cardWidth, behavior: 'smooth' });
      };
 
-    useEffect(() => {
-         const container = buttonRef.current;
+     useEffect(() => {
+          const container = buttonRef.current;
 
-         const onWheel = (e) => {
-              e.preventDefault();
-              if (e.deltaY < 0) {
-                   rightScroll();
-              } else {
-                   leftScroll();
-              }
-         };
+          const onWheel = (e) => {
+               e.preventDefault();
+               if (e.deltaY < 0) {
+                    rightScroll();
+               } else {
+                    leftScroll();
+               }
+          };
 
-         container.addEventListener('wheel', onWheel, { passive: false });
+          container.addEventListener('wheel', onWheel, { passive: false });
 
-         return () => {
-              container.removeEventListener('wheel', onWheel);
-         };
-    }, []);
+          return () => {
+               container.removeEventListener('wheel', onWheel);
+          };
+     }, []);
 
      return (
           <>
@@ -158,7 +244,8 @@ const Skills = () => {
                </Helmet>
 
                <div className="skiles">
-                    <div className="skillsContainer"
+                    <div
+                         className="skillsContainer"
                          style={{
                               display: 'flex',
                               alignItems: 'center',
@@ -268,6 +355,81 @@ const Skills = () => {
                                    <path d="m9 18 6-6-6-6" />
                               </svg>
                          </div>
+                    </div>
+               </div>
+               <div className="tools">
+                    <h2 style={{ textAlign: 'center', fontSize: '2rem' }}>
+                         Tools
+                    </h2>
+                    <p>
+                         Tools and technologies I use to build reliable,
+                         scalable applications.
+                    </p>
+                    <div className="toolsContainer">
+                         {Object.entries(tools).map(([key, value]) => (
+                              <div className="item" key={key}>
+                                   <img
+                                        src={value.icon}
+                                        alt={value.title}
+                                        width={200}
+                                   />
+                                   <h3>{value.title}</h3>
+                                   <p>{value.description}</p>
+                              </div>
+                         ))}
+                    </div>
+               </div>
+               <br />
+               <div
+                    className="why"
+                    style={{
+                         display: 'flex',
+                         justifyContent: 'start',
+                         flexDirection: 'column',
+                         alignItems: 'start',
+                         padding: '10px 70px',
+                    }}>
+                    <h2 style={{ textAlign: 'center', fontSize: '2rem' }}>
+                         Why So Many Tools?
+                    </h2>
+                    <div className='dx' style={{display:"flex", justifyContent:"space-between", alignItems:"center", width:"100%"}} >
+                         <p
+                              style={{
+                                   width: '700px',
+                                   // textAlign: 'center',
+                                   lineHeight: '1.7',
+                              }}>
+                              I believe the right tool truly matters. Every
+                              technology I learn has a clear purpose — whether
+                              it improves performance, enhances workflow
+                              efficiency, strengthens collaboration, or
+                              simplifies deployment. I don’t explore tools to
+                              chase trends or simply expand a list of skills.
+                              Instead, I focus on understanding how and when
+                              each tool should be used.
+                              <br />
+                              <br />
+                              Modern development requires flexibility and
+                              adaptability. Different projects demand different
+                              approaches, and having a strong toolkit allows me
+                              to choose the most effective solution rather than
+                              forcing a single method onto every problem. This
+                              mindset helps me write cleaner code, build more
+                              maintainable systems, and deliver reliable
+                              results.
+                              <br />
+                              <br />
+                              For me, learning tools is not about quantity —
+                              it’s about capability. The goal is always the
+                              same: build better software with clarity,
+                              precision, and purpose.
+                         </p>
+                         <img
+                              src="https://cdn.pixabay.com/photo/2017/03/18/20/02/question-mark-2154831_1280.png"
+                              alt=""
+                              width={200}
+                              style={{ float: 'right' }}
+                         />
                     </div>
                </div>
           </>
