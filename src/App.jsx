@@ -9,6 +9,7 @@ import Experience from './screens/Experience';
 import Education from './screens/Education';
 import Blog from './screens/Blog';
 import Contact from './screens/Contact';
+import StartProject from './screens/StartProject';
 const App = () => {
      
      return (
@@ -23,6 +24,7 @@ const App = () => {
                     <Route path="/education" element={<Education />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/blog" element={<Blog />} />
+                    <Route path="/start-project" element={<StartProject />} />
                </Routes>
           </>
      );

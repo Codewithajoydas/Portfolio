@@ -113,6 +113,32 @@ const Header = () => {
                                    Contact
                               </NavLink>
                          </li>
+                         <li>
+                              <NavLink
+                                   to="/start-project"
+                                   className={'nav-link active start-project'}
+                                   style={{
+                                        background: '#42475b',
+                                        fontSize: '14px',
+                                        borderRadius: '10px',
+                                   }}>
+                                   <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-plus-icon lucide-plus">
+                                        <path d="M5 12h14" />
+                                        <path d="M12 5v14" />
+                                   </svg>
+                                   Start Project
+                              </NavLink>
+                         </li>
                     </ul>
                </nav>
                <div className="hamburger" onClick={() => setOpen(!open)}>
@@ -247,6 +273,38 @@ const Header = () => {
                                                   : 'nav-link'
                                         }>
                                         Contact
+                                   </NavLink>
+                              </li>
+                              <li>
+                                   <NavLink
+                                        to="/start-project"
+                                        className={
+                                             'nav-link active start-project'
+                                        }
+                                        style={{
+                                             background: '#42475b',
+                                             fontSize: '14px',
+                                             borderRadius: '10px',
+                                             display: 'flex',
+                                             alignItems: 'center',
+                                             justifyContent: 'center',
+                                             gap: '10px',
+                                        }}>
+                                        <svg
+                                             xmlns="http://www.w3.org/2000/svg"
+                                             width="20"
+                                             height="20"
+                                             viewBox="0 0 24 24"
+                                             fill="none"
+                                             stroke="currentColor"
+                                             stroke-width="2"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round"
+                                             class="lucide lucide-plus-icon lucide-plus">
+                                             <path d="M5 12h14" />
+                                             <path d="M12 5v14" />
+                                        </svg>
+                                        Start Project
                                    </NavLink>
                               </li>
                          </ul>

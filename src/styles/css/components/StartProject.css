@@ -1,0 +1,110 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.startproject {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.startproject .header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.startproject .header h1 {
+  font-size: clamp(1.5rem, 5vw, 10rem);
+  font-family: charis_moderne;
+  color: #42475b;
+}
+.startproject .header p {
+  color: #555;
+  margin-bottom: 10px;
+}
+.startproject .header .subtext {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.startproject .project-form {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+.startproject .project-form .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.startproject .project-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.startproject .project-form .form-group label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+.startproject .project-form .form-group input,
+.startproject .project-form .form-group select,
+.startproject .project-form .form-group textarea {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  resize: vertical;
+}
+.startproject .project-form .form-group input:focus,
+.startproject .project-form .form-group select:focus,
+.startproject .project-form .form-group textarea:focus {
+  outline: none;
+  border-color: #42475b;
+}
+.startproject .project-form .full-width {
+  grid-column: span 2;
+}
+.startproject .project-form .submit-area {
+  margin-top: 30px;
+  text-align: center;
+}
+.startproject .project-form .submit-area button,
+.startproject .project-form .submit-area .button {
+  background: #42475b;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+.startproject .project-form .submit-area button:hover,
+.startproject .project-form .submit-area .button:hover {
+  background: #42475b;
+}
+
+@media (max-width: 768px) {
+  .start-project .project-form .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .start-project .project-form .full-width {
+    grid-column: span 1;
+  }
+}
+button {
+  background: #42475b;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+button:hover {
+  background: #42475b;
+}
+
+/*# sourceMappingURL=StartProject.css.map */

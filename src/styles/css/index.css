@@ -17,4 +17,12 @@ video {
   -ms-user-select: none;
 }
 
+button, a {
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 /*# sourceMappingURL=index.css.map */

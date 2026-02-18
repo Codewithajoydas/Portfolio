@@ -39,6 +39,8 @@ header {
                          transition: all 0.3s ease-in-out;
                          text-decoration: none;
                          color: inherit;
+                         display: flex;
+                         gap: 10px;
                          &:hover,
                          &.active {
                               border-radius: 50px;
@@ -46,6 +48,9 @@ header {
                               color: #fff;
                               box-shadow: 4px 4px 10px
                                    rgba(128, 128, 128, 0.233);
+                         }
+                         &:hover {
+                              background: #000 !important;
                          }
                     }
                }
@@ -71,7 +76,7 @@ header {
           backdrop-filter: blur(100px);
           background: white;
           box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.233);
-          border-radius:  0 0 50px 50px;
+          border-radius: 0 0 50px 50px;
           width: 100%;
           z-index: 100;
           display: flex;
@@ -122,5 +127,12 @@ header {
           .hamburger {
                display: none;
           }
+     }
+}
+
+.start-project {
+     transition: all 0.2s ease-in-out;
+     &:hover {
+          transform: rpotate(180deg);
      }
 }

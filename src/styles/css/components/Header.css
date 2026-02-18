@@ -39,12 +39,17 @@ header nav ul li a {
   transition: all 0.3s ease-in-out;
   text-decoration: none;
   color: inherit;
+  display: flex;
+  gap: 10px;
 }
 header nav ul li a:hover, header nav ul li a.active {
   border-radius: 50px;
   background-color: #000;
   color: #fff;
   box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.233);
+}
+header nav ul li a:hover {
+  background: #000 !important;
 }
 header .hamburger {
   display: flex;
@@ -108,6 +113,12 @@ header .menus ul li a:hover, header .menus ul li a.active {
   header .hamburger {
     display: none;
   }
+}
+.start-project {
+  transition: all 0.2s ease-in-out;
+}
+.start-project:hover {
+  transform: rpotate(180deg);
 }
 
 /*# sourceMappingURL=Header.css.map */
