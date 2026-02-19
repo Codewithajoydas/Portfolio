@@ -220,6 +220,12 @@ body {
   .hero_banner div:nth-child(1) {
     height: auto;
   }
+  .hero_banner .btns {
+    flex-direction: column;
+  }
+  .hero_banner .btns button {
+    width: 400px !important;
+  }
 }
 
 /*# sourceMappingURL=Home.css.map */

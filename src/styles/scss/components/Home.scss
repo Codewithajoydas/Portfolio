@@ -163,5 +163,11 @@ body {
           div:nth-child(1){
                height: auto;
           }
+          .btns{
+               flex-direction: column;
+               button{
+                    width: 400px !important;
+               }
+          }
      }
 }
