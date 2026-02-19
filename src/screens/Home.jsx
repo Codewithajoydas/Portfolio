@@ -64,7 +64,7 @@ const Home = () => {
 
                <div className="hero_banner">
                     {/* <video src="\src\assets\221965_small.mp4" loop autoPlay></video> */}
-                    <div>
+                    <div style={{width:"100%"}}>
                          {' '}
                          <p>Hi 👋, I'm Ajoy Das,</p>
                          <h1 className="hero_text">

@@ -117,7 +117,6 @@
 .hero_banner div:nth-child(1) .btns button {
   border: none;
   outline: none;
-  max-width: 200px;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -203,8 +202,6 @@ body {
   .hero_banner {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
-    justify-content: start;
     height: auto;
     padding-block: 10px;
   }
@@ -222,9 +219,10 @@ body {
   }
   .hero_banner .btns {
     flex-direction: column;
+    width: 100%;
   }
   .hero_banner .btns button {
-    width: 400px !important;
+    width: 90%;
   }
 }
 
