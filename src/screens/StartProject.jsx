@@ -31,7 +31,7 @@ const StartProject = () => {
 
           try {
                const res = await fetch(
-                    'http://localhost:3000/projectRequests',
+                    'https://p-back-jo4r.onrender.com/projectRequests',
                     {
                          method: 'POST',
                          headers: {
