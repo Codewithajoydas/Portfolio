@@ -9,7 +9,7 @@
 }
 .about p {
   font-size: clamp(1.2rem, 3vw, 2rem);
-  font-family: charis_moderne;
+  font-family: charis_moderne !important;
   font-weight: bold;
   line-height: 1.5;
 }

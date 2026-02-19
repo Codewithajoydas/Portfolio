@@ -64,7 +64,7 @@ const Projects = () => {
 
                <div className="projects">
                     <h1>Projects</h1>
-                    <p>
+                    <p style={{ color: '#42475b'  }} className='asas'>
                          A curated collection of projects focused on real-world
                          problems, system design, and practical engineering
                          fundamentals.

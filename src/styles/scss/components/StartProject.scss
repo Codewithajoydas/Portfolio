@@ -91,14 +91,20 @@
 
 // Responsive
 @media (max-width: 768px) {
-     .start-project {
+     .startproject {
+          padding: 0;
+          margin: 0;
           .project-form {
+               padding: 20px;
                .form-grid {
                     grid-template-columns: 1fr;
                }
 
                .full-width {
                     grid-column: span 1;
+               }
+               .submit-area {
+                    flex-direction: column;
                }
           }
      }

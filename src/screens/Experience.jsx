@@ -62,7 +62,7 @@ const Experience = () => {
                <section className="experience">
                     <div className="experience-header">
                          <h1>Experience</h1>
-                         <p>
+                         <p style={{ color: '#42475b' }} className="asas">
                               A combination of professional responsibility and
                               self-driven development, focused on continuous
                               learning and practical execution.

@@ -86,11 +86,21 @@
 }
 
 @media (max-width: 768px) {
-  .start-project .project-form .form-grid {
+  .startproject {
+    padding: 0;
+    margin: 0;
+  }
+  .startproject .project-form {
+    padding: 20px;
+  }
+  .startproject .project-form .form-grid {
     grid-template-columns: 1fr;
   }
-  .start-project .project-form .full-width {
+  .startproject .project-form .full-width {
     grid-column: span 1;
+  }
+  .startproject .project-form .submit-area {
+    flex-direction: column;
   }
 }
 button {

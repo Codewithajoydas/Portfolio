@@ -103,7 +103,7 @@
   animation-delay: 0.42s;
 }
 .hero_banner div:nth-child(1) p {
-  font-family: charis_moderne;
+  font-family: charis_moderne !important;
   font-weight: bold;
   font-size: larger;
 }

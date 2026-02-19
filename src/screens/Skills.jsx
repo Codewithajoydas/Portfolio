@@ -253,7 +253,7 @@ const Skills = () => {
                          }}>
                          <div>
                               <h1>Skills</h1>
-                              <p>
+                              <p style={{ color: '#42475b' }} className="asas">
                                    A practical set of skills shaped by hands-on
                                    experience and continuous learning.
                               </p>
@@ -392,7 +392,14 @@ const Skills = () => {
                     <h2 style={{ textAlign: 'center', fontSize: '2rem' }}>
                          Why So Many Tools?
                     </h2>
-                    <div className='dx' style={{display:"flex", justifyContent:"space-between", alignItems:"center", width:"100%"}} >
+                    <div
+                         className="dx"
+                         style={{
+                              display: 'flex',
+                              justifyContent: 'space-between',
+                              alignItems: 'center',
+                              width: '100%',
+                         }}>
                          <p
                               style={{
                                    width: '700px',

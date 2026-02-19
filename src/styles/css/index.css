@@ -17,12 +17,28 @@ video {
   -ms-user-select: none;
 }
 
-button, a {
+button,
+a {
   white-space: nowrap;
   user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+p {
+  font-family: "Mulish", sans-serif !important;
+  color: black !important;
+}
+
+@font-face {
+  font-family: charis_moderne;
+  src: url("../../assets/fonts/Charis_Moderne.otf");
+}
+.asas {
+  color: #42475b !important;
+  font-size: large !important;
+  font-family: charis_moderne !important;
 }
 
 /*# sourceMappingURL=index.css.map */

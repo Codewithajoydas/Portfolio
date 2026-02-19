@@ -65,7 +65,7 @@ const Education = () => {
                <section className="education">
                     <div className="education-header">
                          <h1>Education</h1>
-                         <p>
+                         <p style={{ color: '#42475b' }} className="asas">
                               My educational background combines formal
                               academics with continuous self-driven learning,
                               focused on building practical knowledge and
@@ -118,10 +118,7 @@ const Education = () => {
                          {/* Self Learning */}
                          <div className="education-card">
                               <div className="education-image">
-                                   <img
-                                        src={image3}
-                                        alt="Self Learning"
-                                   />
+                                   <img src={image3} alt="Self Learning" />
                               </div>
                               <div className="education-content">
                                    <h2>Self-Driven Learning</h2>

@@ -17,6 +17,7 @@
 }
 .projects p {
   font-size: large;
+  color: #42475b;
   font-family: charis_moderne;
   font-weight: bolder;
 }
@@ -44,10 +45,9 @@
   color: gray;
 }
 .projects .p-items .p-item .item-body p {
-  font-family: charis_moderne;
   font-size: larger;
-  font-weight: bolder;
   line-height: 1.5;
+  font-weight: 400;
 }
 .projects .p-items .p-item .item-body button {
   padding: 15px 50px;
