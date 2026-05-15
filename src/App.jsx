@@ -12,12 +12,12 @@ import Contact from './screens/Contact';
 import StartProject from './screens/StartProject';
 import AdminDashboard from './screens/admin/Dashboard';
 import AdminLayout from './screens/admin/_Layout';
-import PendingPage from './screens/admin/pending';
+import PendingPage from './screens/admin/Pending';
 import AllPage from './screens/admin/All';
-import CancelledPage from './screens/admin/cancelled';
-import CompletedPage from './screens/admin/completed';
+import CancelledPage from './screens/admin/Cancelled';
+import CompletedPage from './screens/admin/Completed';
 import SettingsPage from './screens/admin/Settings';
-import LoginPage from './screens/admin/login';
+import LoginPage from './screens/admin/Login';
 import DetailedPendingPage from './screens/admin/DetailedPendingPage';
 const App = () => {
      return (
