@@ -10,7 +10,7 @@ import Education from './screens/Education';
 import Blog from './screens/Blog';
 import Contact from './screens/Contact';
 import StartProject from './screens/StartProject';
-import AdminDashboard from './screens/admin/dashboard';
+import AdminDashboard from './screens/admin/Dashboard';
 import AdminLayout from './screens/admin/_Layout';
 import PendingPage from './screens/admin/pending';
 import AllPage from './screens/admin/All';
