@@ -1,0 +1,139 @@
+.content {
+     padding: 30px;
+     width: calc(100vw - 250px);
+
+     .dashboard-header {
+          h1 {
+               font-size: 28px;
+               margin-bottom: 5px;
+          }
+
+          p {
+               color: #666;
+               margin-bottom: 30px;
+          }
+     }
+
+     /* Card Grid */
+     .cards {
+          display: flex;
+          flex-wrap: nowrap;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+     }
+
+     /* Card */
+     .card {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          padding: 20px;
+          flex: 1;
+          border-radius: 10px;
+          background: #ffffff;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+          transition: 0.3s ease;
+          cursor: pointer;
+
+          &:hover {
+               transform: translateY(-5px);
+          }
+
+          .card-icon {
+               padding: 12px;
+               border-radius: 8px;
+               background: #f2f2f2;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+          }
+
+          .card-info {
+               h2 {
+                    margin: 0;
+                    font-size: xx-large;
+                    font-family: 'Quicksand', sans-serif;
+               }
+
+               p {
+                    margin: 0;
+                    font-size: 14px;
+                    color: #777;
+               }
+          }
+
+          /* Status Variants */
+          &.pending {
+               .card-icon {
+                    background: #fff4e5;
+                    color: #ff9800;
+               }
+          }
+
+          &.approved {
+               .card-icon {
+                    background: #e3f2fd;
+                    color: #2196f3;
+               }
+          }
+
+          &.completed {
+               .card-icon {
+                    background: #e8f5e9;
+                    color: #4caf50;
+               }
+          }
+
+          &.cancelled {
+               .card-icon {
+                    background: #ffebee;
+                    color: #f44336;
+               }
+          }
+     }
+}
+
+table {
+     width: 100%;
+     margin-block: 10px;
+     border-collapse: collapse;
+     background: white;
+     th {
+          font-weight: 500;
+          padding: 10px;
+          background: #42475b;
+          color: white;
+          text-align-last: left;
+          font-size: medium;
+     }
+     td {
+          padding: 10px;
+          font-size: small;
+     }
+}
+
+.approve-btn {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     background: #e6f9ec;
+     color: green;
+     padding: 6px 10px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+}
+
+.reject-btn {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     background: #fde6e6;
+     color: red;
+     padding: 6px 10px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+}

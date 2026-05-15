@@ -46,6 +46,7 @@ const StartProject = () => {
                               features: formData.features,
                               budget: formData.budget,
                               timeline: formData.timeline,
+                              companyName: formData.company,
                          }),
                     },
                );

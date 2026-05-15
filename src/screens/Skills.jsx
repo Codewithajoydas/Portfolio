@@ -269,10 +269,10 @@ const Skills = () => {
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-target-icon lucide-target">
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        className="lucide lucide-target-icon lucide-target">
                                         <circle cx="12" cy="12" r="10" />
                                         <circle cx="12" cy="12" r="6" />
                                         <circle cx="12" cy="12" r="2" />
@@ -293,10 +293,10 @@ const Skills = () => {
                                    viewBox="0 0 24 24"
                                    fill="none"
                                    stroke="currentColor"
-                                   stroke-width="2"
-                                   stroke-linecap="round"
-                                   stroke-linejoin="round"
-                                   class="lucide lucide-chevron-left-icon lucide-chevron-left">
+                                   strokeWidth="2"
+                                   strokeLinecap="round"
+                                   strokeLinejoin="round"
+                                   className="lucide lucide-chevron-left-icon lucide-chevron-left">
                                    <path d="m15 18-6-6 6-6" />
                               </svg>
                          </div>
@@ -348,10 +348,10 @@ const Skills = () => {
                                    viewBox="0 0 24 24"
                                    fill="none"
                                    stroke="currentColor"
-                                   stroke-width="2"
-                                   stroke-linecap="round"
-                                   stroke-linejoin="round"
-                                   class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                                   strokeWidth="2"
+                                   strokeLinecap="round"
+                                   strokeLinejoin="round"
+                                   className="lucide lucide-chevron-right-icon lucide-chevron-right">
                                    <path d="m9 18 6-6-6-6" />
                               </svg>
                          </div>

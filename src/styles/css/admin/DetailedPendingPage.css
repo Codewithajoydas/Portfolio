@@ -1,0 +1,47 @@
+.detail-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-row span {
+  color: #777;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background: #fff4d6;
+  color: #b58b00;
+}
+
+.status.approved {
+  background: #e6f9ec;
+  color: green;
+}
+
+.status.rejected {
+  background: #fde6e6;
+  color: red;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=DetailedPendingPage.css.map */

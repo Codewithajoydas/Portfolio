@@ -1,16 +1,27 @@
-import { NavLink, useLocation } from 'react-router';
+import { NavLink, useLocation, useNavigate } from 'react-router';
 import '../styles/scss/components/Header.scss';
 import { useEffect, useState } from 'react';
 
 const Header = () => {
+     const navigation = useNavigate();
      const [open, setOpen] = useState(false);
+     const [openAdminPage, setOpenAdminPage] = useState(0);
+     useEffect(() => {
+          if (openAdminPage === 5) {
+               alert('Are you sure you want to open the admin page?');
+               setOpenAdminPage(0);
+               navigation('/admin');
+          }
+     }, [openAdminPage, navigation]);
      const location = useLocation();
      useEffect(() => {
           setOpen(false);
      }, [location.pathname]);
      return (
           <header>
-               <div className="logo">
+               <div
+                    className="logo"
+                    onClick={() => setOpenAdminPage(openAdminPage + 1)}>
                     <img src="/logo.png" alt="Portfolio of Codewithajoydas" />
                     <strong>Codewithajoydas.</strong>
                </div>
@@ -129,10 +140,10 @@ const Header = () => {
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-plus-icon lucide-plus">
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        className="lucide lucide-plus-icon lucide-plus">
                                         <path d="M5 12h14" />
                                         <path d="M12 5v14" />
                                    </svg>
@@ -150,10 +161,10 @@ const Header = () => {
                               viewBox="0 0 24 24"
                               fill="none"
                               stroke="currentColor"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              class="lucide lucide-x-icon lucide-x">
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              className="lucide lucide-x-icon lucide-x">
                               <path d="M18 6 6 18" />
                               <path d="m6 6 12 12" />
                          </svg>
@@ -165,10 +176,10 @@ const Header = () => {
                               viewBox="0 0 24 24"
                               fill="none"
                               stroke="currentColor"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              class="lucide lucide-menu-icon lucide-menu">
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              className="lucide lucide-menu-icon lucide-menu">
                               <path d="M4 5h16" />
                               <path d="M4 12h16" />
                               <path d="M4 19h16" />
@@ -297,10 +308,10 @@ const Header = () => {
                                              viewBox="0 0 24 24"
                                              fill="none"
                                              stroke="currentColor"
-                                             stroke-width="2"
-                                             stroke-linecap="round"
-                                             stroke-linejoin="round"
-                                             class="lucide lucide-plus-icon lucide-plus">
+                                             strokeWidth="2"
+                                             strokeLinecap="round"
+                                             strokeLinejoin="round"
+                                             className="lucide lucide-plus-icon lucide-plus">
                                              <path d="M5 12h14" />
                                              <path d="M12 5v14" />
                                         </svg>

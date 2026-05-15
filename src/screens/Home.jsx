@@ -64,7 +64,7 @@ const Home = () => {
 
                <div className="hero_banner">
                     {/* <video src="\src\assets\221965_small.mp4" loop autoPlay></video> */}
-                    <div style={{width:"100%"}}>
+                    <div style={{ width: '100%' }}>
                          {' '}
                          <p>Hi 👋, I'm Ajoy Das,</p>
                          <h1 className="hero_text">
@@ -98,10 +98,10 @@ const Home = () => {
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-equal-approximately-icon lucide-equal-approximately">
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        className="lucide lucide-equal-approximately-icon lucide-equal-approximately">
                                         <path d="M5 15a6.5 6.5 0 0 1 7 0 6.5 6.5 0 0 0 7 0" />
                                         <path d="M5 9a6.5 6.5 0 0 1 7 0 6.5 6.5 0 0 0 7 0" />
                                    </svg>
@@ -115,10 +115,10 @@ const Home = () => {
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-file-user-icon lucide-file-user">
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        className="lucide lucide-file-user-icon lucide-file-user">
                                         <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
                                         <path d="M14 2v5a1 1 0 0 0 1 1h5" />
                                         <path d="M16 22a4 4 0 0 0-8 0" />

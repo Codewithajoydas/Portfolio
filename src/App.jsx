@@ -10,8 +10,16 @@ import Education from './screens/Education';
 import Blog from './screens/Blog';
 import Contact from './screens/Contact';
 import StartProject from './screens/StartProject';
+import AdminDashboard from './screens/admin/dashboard';
+import AdminLayout from './screens/admin/_Layout';
+import PendingPage from './screens/admin/pending';
+import AllPage from './screens/admin/All';
+import CancelledPage from './screens/admin/cancelled';
+import CompletedPage from './screens/admin/completed';
+import SettingsPage from './screens/admin/Settings';
+import LoginPage from './screens/admin/login';
+import DetailedPendingPage from './screens/admin/DetailedPendingPage';
 const App = () => {
-     
      return (
           <>
                <Header />
@@ -25,6 +33,20 @@ const App = () => {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/start-project" element={<StartProject />} />
+                    <Route path="/admin" element={<AdminLayout />}>
+                         <Route index element={<AdminDashboard />} />
+                         <Route path="pending" element={<PendingPage />} />
+                         <Route
+                              path="pending/:id"
+                              element={<DetailedPendingPage />}
+                         />
+                         <Route path="all" element={<AllPage />} />
+                         <Route path="cancelled" element={<CancelledPage />} />
+                         <Route path="completed" element={<CompletedPage />} />
+                         <Route path="settings" element={<SettingsPage />} />
+                         <Route path="login" element={<LoginPage />} />
+                    </Route>
+                    <Route path="*" element={<h1>404</h1>} />
                </Routes>
           </>
      );

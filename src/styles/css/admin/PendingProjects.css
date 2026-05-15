@@ -1,0 +1,9 @@
+table td a {
+  color: black;
+  text-decoration: none;
+}
+table td a:hover {
+  color: #42475b;
+}
+
+/*# sourceMappingURL=PendingProjects.css.map */

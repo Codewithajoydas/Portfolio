@@ -1,0 +1,45 @@
+.container {
+     display: flex;
+     justify-content: space-star;
+     height: calc(100vh - 60px);
+     aside {
+          position:fixed;
+          top: 60px;
+          width: 250px;
+          height: calc(100vh - 60px);
+          background-color: #fff;
+          box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.233);
+          ul {
+               position: relative;
+               height: 100%;
+               overflow-y: scroll;
+               height: calc(100vh - 60px);
+               a {
+                    padding: 10px 20px;
+                    margin-inline: 10px;
+                    margin-block: 5px;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                    text-decoration: none;
+                    color: inherit;
+                    display: flex;
+                    gap: 10px;
+                    &:hover,
+                    &.active {
+                         border-radius: 50px;
+                         background-color: #000;
+                         color: #fff;
+                         box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.233);
+                    }
+               }
+               .bottom_link {
+                    position: absolute;
+                    bottom: 10px;
+                    width: 100%;
+               }
+          }
+     }
+     .dashboard-content{
+        padding: 10px;
+     }
+}
