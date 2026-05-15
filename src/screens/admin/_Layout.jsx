@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { NavLink, Outlet, Route, Routes, useNavigate } from 'react-router';
 import { AuthContext } from '../../contexts/AuthContext';
 import '../../styles/css/admin/dashboard.css';
-import LoginPage from './login';
+import LoginPage from './Login';
 
 import {
      BanknoteX,
